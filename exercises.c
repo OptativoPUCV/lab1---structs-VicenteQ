@@ -16,15 +16,14 @@ int findMax(int arr[], int size) {
       elementoMayor = arr[i];
     }
     else{
-      int pivote = arr[i];
-      if(elementoMayor < pivote){
-        elementoMayor = pivote;
+      if(elementoMayor < arr[i]){
+        elementoMayor = arr[i];
       }
     }
   }
   return elementoMayor; 
 }
-
+s
 
 
 /*

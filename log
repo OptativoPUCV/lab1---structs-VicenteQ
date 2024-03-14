@@ -37,3 +37,16 @@ exercises.c:25:10: error: ‘elementoMayor’ may be used uninitialized in this 
 cc1: all warnings being treated as errors
 Compilation failed
 4b0ff06
+Thu 14 Mar 2024 08:32:21 PM UTC: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c:26:2: error: expected ‘;’ before ‘void’
+   26 | s
+      |  ^
+      |  ;
+......
+   34 | void reverseArray(int arr[], int size) {}
+      | ~~~~
+Compilation failed
+df90eda
