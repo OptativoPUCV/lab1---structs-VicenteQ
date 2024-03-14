@@ -50,3 +50,9 @@ exercises.c:26:2: error: expected ‘;’ before ‘void’
       | ~~~~
 Compilation failed
 df90eda
+Thu 14 Mar 2024 08:33:59 PM UTC: 
+ exercises.c | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+ tests:  0|6
+total_score: 10/70
+8d4d1f8
