@@ -439,3 +439,19 @@ exercises.c:69:6: note: declared here
       |      ^~~~~~~~~~
 Compilation failed
 2bc3945
+Thu 14 Mar 2024 11:16:55 PM UTC: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:91:14: error: expected expression before ‘int’
+   91 |   bubbleSort(int *vectorNuevo, int size);
+      |              ^~~
+exercises.c:91:3: error: too few arguments to function ‘bubbleSort’
+   91 |   bubbleSort(int *vectorNuevo, int size);
+      |   ^~~~~~~~~~
+exercises.c:69:6: note: declared here
+   69 | void bubbleSort(int arr[], int size) {
+      |      ^~~~~~~~~~
+Compilation failed
+295db6e
