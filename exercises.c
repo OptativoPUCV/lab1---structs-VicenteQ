@@ -67,6 +67,16 @@ ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void bubbleSort(int arr[], int size) {
+  for (int i = 0; i < size - 1; i++) {
+    for (int j = 0; j < size - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        int temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+}
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   int *vectorNuevo;
   int size = size1 + size2;
@@ -78,6 +88,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
   for(int i = 0; i < size2; i++){
     vectorNuevo[i + size1] = arr2[i];
   }
+  bubbleSort(int *vectorNuevo, int size);
 }
 
 /*

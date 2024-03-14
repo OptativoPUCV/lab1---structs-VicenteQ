@@ -423,3 +423,19 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 ada444f
+Thu 14 Mar 2024 11:09:04 PM UTC: 
+ exercises.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:91:14: error: expected expression before ‘int’
+   91 |   bubbleSort(int *vectorNuevo, int size);
+      |              ^~~
+exercises.c:91:3: error: too few arguments to function ‘bubbleSort’
+   91 |   bubbleSort(int *vectorNuevo, int size);
+      |   ^~~~~~~~~~
+exercises.c:69:6: note: declared here
+   69 | void bubbleSort(int arr[], int size) {
+      |      ^~~~~~~~~~
+Compilation failed
+2bc3945
