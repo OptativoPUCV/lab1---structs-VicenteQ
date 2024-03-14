@@ -177,3 +177,23 @@ exercises.c:78:31: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 b935a36
+Thu 14 Mar 2024 09:13:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:60:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   60 |   return *newArr;
+      |          ^~~~~~~
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:77:3: error: expected identifier or ‘(’ before ‘int’
+   77 |   int size = size1 + size2;
+      |   ^~~
+exercises.c:78:31: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   78 |   vectorNuevo = (int *)malloc(size * sizeof(int));
+      |                               ^~~~
+      |                               size2
+exercises.c:78:31: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+2f7109f
