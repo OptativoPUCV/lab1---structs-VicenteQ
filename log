@@ -319,3 +319,18 @@ Thu 14 Mar 2024 10:30:41 PM UTC:
  tests:  0|5
 total_score: 20/70
 d941f40
+Thu 14 Mar 2024 10:45:21 PM UTC: 
+ exercises.c | 25 ++++++++++++++++++++++++-
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:113:14: error: expected ‘;’ before ‘:’ token
+  113 |     return -1:
+      |              ^
+      |              ;
+exercises.c:118:1: error: control reaches end of non-void function [-Werror=return-type]
+  118 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5db73bb
