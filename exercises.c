@@ -53,11 +53,11 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
   }
   if(newArr == NULL){
-    *newSize = 0;
+    (*newSize) = 0;
     return NULL;
   }
   (*newSize) = contador;
-  return newArr;
+  return *newArr;
 }
 
 /*
