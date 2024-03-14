@@ -73,7 +73,7 @@ int cmpr (const void * pivote, const void * item){
   return 0;
 }
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
-  int *vectorNuevo,
+  int *vectorNuevo;
   int size = size1 + size2;
   vectorNuevo = (int *)malloc(size * sizeof(int));
   if(vectorNuevo == NULL) exit (EXIT_FAILURE);

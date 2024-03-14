@@ -302,3 +302,14 @@ exercises.c:78:31: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 47dffa1
+Thu 14 Mar 2024 10:30:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘cmpr’:
+exercises.c:72:16: error: comparison between pointer and integer [-Werror]
+   72 |   if(ptrPivote > *ptrItem) return 1;
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+451f164
