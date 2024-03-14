@@ -271,3 +271,14 @@ test.c:204:3: error: implicit declaration of function ‘mergeSortedArrays’ [-
 cc1: all warnings being treated as errors
 Compilation failed
 5097a12
+Thu 14 Mar 2024 10:26:03 PM UTC: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘cmpr’:
+exercises.c:72:16: error: comparison between pointer and integer [-Werror]
+   72 |   if(ptrPivote > *ptrItem) return 1;
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+8bc8690
