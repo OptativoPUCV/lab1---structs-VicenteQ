@@ -49,13 +49,12 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     if(arr[i] % 2 == 0){
       contador ++;
       newArr = realloc(newArr, sizeof(int) * contador);
-      if (newArr == NULL) {
-        free(newArr);
-        (*newSize) = 0;
-        return NULL;
-      }
       newArr[contador - 1] = arr[i];
     }
+  }
+  if(newArr == NULL){
+    *newSize = 0;
+    return NULL;
   }
   (*newSize) = contador;
   return newArr;
