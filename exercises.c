@@ -115,7 +115,6 @@ int checkSorted(int arr[], int size){
   else if(contador != 1 && contador != -1){
     return 0;
   }
-}
 
 /*
 Ejercicio 6: Información de una Biblioteca
