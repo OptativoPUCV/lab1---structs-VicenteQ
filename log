@@ -380,3 +380,17 @@ exercises.c:118:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 29e0a88
+Thu 14 Mar 2024 11:04:14 PM UTC: 
+ exercises.c | 24 ++++++++++++------------
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:103:11: error: expected identifier or ‘(’ before ‘=’ token
+  103 |   for(int = 0; i < size - 1; i++){
+      |           ^
+exercises.c:103:16: error: ‘i’ undeclared (first use in this function)
+  103 |   for(int = 0; i < size - 1; i++){
+      |                ^
+exercises.c:103:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+cee861f
