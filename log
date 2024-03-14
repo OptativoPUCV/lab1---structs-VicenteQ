@@ -261,3 +261,13 @@ exercises.c:78:31: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 b168f3c
+Thu 14 Mar 2024 10:25:43 PM UTC: 
+ exercises.c | 20 +-------------------
+ 1 file changed, 1 insertion(+), 19 deletions(-)
+test.c: In function ‘test_mergeSort’:
+test.c:204:3: error: implicit declaration of function ‘mergeSortedArrays’ [-Werror=implicit-function-declaration]
+  204 |   mergeSortedArrays(arr1, size1, arr2, size2, result);
+      |   ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5097a12
