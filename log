@@ -455,3 +455,9 @@ exercises.c:69:6: note: declared here
       |      ^~~~~~~~~~
 Compilation failed
 295db6e
+Thu 14 Mar 2024 11:19:07 PM UTC: 
+ exercises.c | 17 ++++++-----------
+ 1 file changed, 6 insertions(+), 11 deletions(-)
+ tests:  0|2
+total_score: 50/70
+f5be9db
