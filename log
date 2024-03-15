@@ -490,3 +490,18 @@ Thu 14 Mar 2024 11:45:54 PM UTC:
  tests:  0|2
 total_score: 50/70
 336de32
+Fri 15 Mar 2024 12:00:16 AM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘comparar’:
+exercises.c:72:18: error: ‘ptrItem’ undeclared (first use in this function)
+   72 |   if(ptrPivote > ptrItem) return 1;
+      |                  ^~~~~~~
+exercises.c:72:18: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:71:8: error: unused variable ‘ptrComparar’ [-Werror=unused-variable]
+   71 |   int *ptrComparar = (int *)b;
+      |        ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a9a5a1d
