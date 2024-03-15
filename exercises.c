@@ -65,16 +65,19 @@ ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
-  int size = size1 + size2;
-  int aux;
-  for(int i = 0; i < size1; i++){
-    aux = arr1[i];
-    for(int k = 0; k < size2; k++){
-      if(arr2[k] < aux){
-        aux = arr2[k];
+  int i = 0, j = 0, k = 0;
+  while (i < size1 && j < size2) {
+      if (arr1[i] < arr2[j]) {
+          result[k++] = arr1[i++];
+      } else {
+          result[k++] = arr2[j++];
       }
-    }
-    result[i] = aux;
+  }
+  while (i < size1) {
+      result[k++] = arr1[i++];
+  }
+  while (j < size2) {
+      result[k++] = arr2[j++];
   }
 }
 
