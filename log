@@ -560,3 +560,16 @@ Fri 15 Mar 2024 12:14:25 AM UTC:
  tests:  0|2
 total_score: 50/70
 e7dff08
+Fri 15 Mar 2024 12:19:15 AM UTC: 
+ exercises.c | 13 ++++---------
+ 1 file changed, 4 insertions(+), 9 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:13: error: array subscript is not an integer
+   50 |       newArr[newSize] = arr[i];
+      |             ^
+exercises.c:51:44: error: invalid operands to binary * (have ‘long unsigned int’ and ‘int *’)
+   51 |       newArr = realloc(newArr, sizeof(int) * newSize);
+      |                                            ^
+Compilation failed
+45c4c1f
