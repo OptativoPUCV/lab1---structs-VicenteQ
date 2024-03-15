@@ -505,3 +505,9 @@ exercises.c:71:8: error: unused variable ‘ptrComparar’ [-Werror=unused-varia
 cc1: all warnings being treated as errors
 Compilation failed
 a9a5a1d
+Fri 15 Mar 2024 12:00:32 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+4aa19f3

@@ -68,7 +68,7 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 int comparar(const void *a, const void *b){
   int *ptrPivote = (int *)a;
-  int *ptrComparar = (int *)b;
+  int *ptrItem = (int *)b;
   if(ptrPivote > ptrItem) return 1;
   return 0;
 }
