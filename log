@@ -657,3 +657,20 @@ Fri 15 Mar 2024 12:02:12 PM UTC:
  tests:  0|2
 total_score: 50/70
 3efa694
+Fri 15 Mar 2024 12:07:02 PM UTC: 
+ exercises.c | 21 ++++++++++++++++++---
+ 1 file changed, 18 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:62: error: expected ‘)’ before ‘;’ token
+   50 |       newArr = realloc(newArr, sizeof(int) * ((*newSize) + 1);
+      |                       ~                                      ^
+      |                                                              )
+exercises.c:55:20: error: expected ‘;’ before ‘}’ token
+   55 |       (*newSize)++;
+      |                    ^
+      |                    ;
+   56 |     }
+      |     ~               
+Compilation failed
+a15668c
