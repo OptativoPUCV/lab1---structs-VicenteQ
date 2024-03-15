@@ -75,7 +75,6 @@ int comparar(const void *a, const void *b){
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   int size = size1 + size2;
   result = (int *)malloc(size * sizeof(int));
-  if(result == NULL) exit (EXIT_FAILURE);
   for(int i = 0; i < size1; i++){                     
       result[i] = arr1[i];
   }
