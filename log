@@ -511,3 +511,16 @@ Fri 15 Mar 2024 12:00:32 AM UTC:
  tests:  0|2
 total_score: 50/70
 4aa19f3
+Fri 15 Mar 2024 12:07:15 AM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:76:8: error: ‘result’ redeclared as different kind of symbol
+   76 |   int *result = NULL;
+      |        ^~~~~~
+exercises.c:75:73: note: previous definition of ‘result’ with type ‘int *’
+   75 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
+      |                                                                     ~~~~^~~~~~~~
+Compilation failed
+1a3d90d

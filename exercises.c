@@ -73,17 +73,17 @@ int comparar(const void *a, const void *b){
   return 0;
 }
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
-  int *vectorNuevo;
+  int *result = NULL;
   int size = size1 + size2;
-  vectorNuevo = (int *)malloc(size * sizeof(int));
-  if(vectorNuevo == NULL) exit (EXIT_FAILURE);
+    result = (int *)malloc(size * sizeof(int));
+  if(result == NULL) exit (EXIT_FAILURE);
   for(int i = 0; i < size1; i++){                     
-    vectorNuevo[i] = arr1[i];
+      result[i] = arr1[i];
   }
   for(int i = 0; i < size2; i++){
-    vectorNuevo[i + size1] = arr2[i];
+      result[i + size1] = arr2[i];
   }
-  qsort(vectorNuevo,size,sizeof(int),comparar);
+  qsort(result,size,sizeof(int),comparar);
 }
 
 /*
