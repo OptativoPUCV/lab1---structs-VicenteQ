@@ -586,3 +586,9 @@ exercises.c:51:44: error: invalid operands to binary * (have ‘long unsigned in
       |                                            ^
 Compilation failed
 8e9d736
+Fri 15 Mar 2024 12:21:39 AM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+ tests:  0|1
+total_score: 60/70
+5592a1e
