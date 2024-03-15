@@ -573,3 +573,16 @@ exercises.c:51:44: error: invalid operands to binary * (have ‘long unsigned in
       |                                            ^
 Compilation failed
 45c4c1f
+Fri 15 Mar 2024 12:20:18 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:13: error: array subscript is not an integer
+   50 |       newArr[newSize] = arr[i];
+      |             ^
+exercises.c:51:44: error: invalid operands to binary * (have ‘long unsigned int’ and ‘int *’)
+   51 |       newArr = realloc(newArr, sizeof(int) * newSize);
+      |                                            ^
+Compilation failed
+8e9d736
