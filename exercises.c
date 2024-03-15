@@ -70,7 +70,6 @@ int comparar(const void *a, const void *b){
   int *ptrPivote = (int *)a;
   int *ptrItem = (int *)b;
   if(ptrPivote > ptrItem) return 1;
-  if (*ptrPivote < *ptrItem) return -1;
   return 0;
 }
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
